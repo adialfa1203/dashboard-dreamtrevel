@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Dream Travel-Tambah Data Pengguna</title>
+      <title>POS Dash | Responsive Bootstrap 4 Admin Dashboard Template</title>
       
       <!-- Favicon -->
       <link rel="shortcut icon" href="https://templates.iqonic.design/lite/posdash/html/assets/images/favicon.ico" />
@@ -28,7 +28,7 @@
       <div class="iq-sidebar  sidebar-default ">
           <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
               <a href="index.html" class="header-logo">
-                  <img src="../assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo"><h5 class="logo-title light-logo ml-3">POSDash</h5>
+                  <img src="../assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo"><h5 class="logo-title light-logo ml-3">Dream Travel</h5>
               </a>
               <div class="iq-menu-bt-sidebar ml-0">
                   <i class="las la-bars wrapper-menu"></i>
@@ -42,7 +42,7 @@
                               <svg  class="svg-icon" id="p-dash1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                   <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>
                               </svg>
-                              <span class="ml-4">Beranda</span>
+                              <span class="ml-4">Dashboard</span>
                           </a>
                       </li>
                       <li class=" ">
@@ -53,9 +53,7 @@
                             <span class="ml-4">Data Pengguna</span>
                         </a>
                         <ul id="table" class="iq-submenu collapse" data-parent="#otherpage">
-                            <li class="active">
-                                  
-                            </li>
+                                
                                  
                           </ul>
                       </li>
@@ -80,16 +78,26 @@
                                     <i class="las la-minus"></i><span>Tujuan</span>
                                 </a>
                             </li>
+                            <li class="">
+                                <a href="kategori.html">
+                                    <i class="las la-minus"></i><span>Kategori Kendaraan</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    <i class="las la-minus"></i><span>Edit Kategori</span>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                          
                       <li class="">
-                        <a href="page-report.html" class="">
+                        <a href="page-list-returns.html" class="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-exclamation" viewBox="0 0 16 16">
                                 <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
                                 <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1.5a.5.5 0 0 1-1 0V11a.5.5 0 0 1 1 0Zm0 3a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
                               </svg>
-                            <span class="ml-4">Laporan Pemesanan</span>
+                            <span class="ml-4">Pesanan</span>
                         </a>
                         <ul id="reports" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                         </ul>
@@ -358,51 +366,38 @@
                 <div class="card">
                     <div class="card-header d-flex justify-content-between">
                         <div class="header-title">
-                            <h4 class="card-title">Tambah Data Pengguna</h4>
+                            <h4 class="card-title">Edit Kategori Kendaraan</h4>
                         </div>
                     </div>
                     <div class="card-body">
                         <form action="https://templates.iqonic.design/lite/posdash/html/backend/page-list-product.html" data-toggle="validator">
                             <div class="row">
-                                <div class="col-md-6">                      
-                                    <div class="form-group">
-                                        <label>Nama Pengguna*</label>
-                                        <input type="text" class="form-control" placeholder="Masukan Nama" data-errors="Masukan Nama." required>
-                                        <div class="help-block with-errors"></div>
+                                <div class="col-md-6"> 
+                                    <div class="col-md-6">                      
+                                        <div class="form-group">
+                                            <label>Nama Kendaraan</label>
+                                            <input type="text" class="form-control" placeholder="Masukan Tujuan" data-errors="Masukan Tujuan." required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
                                     </div>
-                                </div>
+                                    
                                 <div class="col-md-6">                      
                                     <div class="form-group">
-                                        <label>No Telepon*</label>
-                                        <input type="number" class="form-control" placeholder="Masukan no Telepon" data-errors="Masukan no Telepon." required>
+                                        <label>Kategori Kendaraan</label>
+                                        <input type="text" class="form-control" placeholder="Masukan Tujuan" data-errors="Masukan Tujuan." required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>    
-                                <div class="col-md-6">
+                                <div class="col-md-6">                      
                                     <div class="form-group">
-                                        <label>Alamat</label>
-                                        <input type="text" class="form-control" placeholder="Masukan Alamat" data-errors="Masukan Alamat." required>
+                                        <label>Bahan Bakar</label>
+                                        <input type="number" class="form-control" placeholder="Masukan Harga" data-errors="Masukan Harga." required>
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                </div> 
-                                
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Email</label>
-                                        <input type="email" class="form-control" placeholder="Masukan Email" data-errors="Masukan Email." required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Tanggal Lahir</label>
-                                        <input type="date" class="form-control" placeholder="Masukan Tanggal Lahir." data-errors="Masukan Tanggal Lahir" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
+                                </div>    
 
                             </div>                            
-                            <button type="submit" class="btn btn-primary mr-2">Tambah Travel</button>
+                            <button type="submit" class="btn btn-primary mr-2">Tambah Kategori</button>
                             <button type="reset" class="btn btn-danger">Mengatur ulang</button>
                         </form>
                     </div>
